@@ -55,3 +55,7 @@ fig.add_trace(go.Scatter(x = [third_start, third_start], y = [0, 0.17], mode='li
 fig.add_trace(go.Scatter(x = [third_end, third_end], y = [0, 0.17], mode='lines', name="mean"))
 # passing show figure to display the figure 
 fig.show()
+
+# calculating the z-score 
+z_score = (population_mean - samplemean)/population_stdev
+print("The z score is: ", z_score)
